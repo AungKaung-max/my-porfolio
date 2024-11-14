@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Season&display=swap");
+
+body {
+  font-family: "Season";
+}
+.main-wrapper {
+  padding: 5rem;
+  margin-left: 15rem;
+  margin-right: 10rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+  font-size: 1.5rem;
+  margin-right: -1rem;
+}
+.button-wrap
+{   
+    margin-top: 20px;
+    border: 1px solid;
+    max-width: 320px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 5rem;
+}
+
+.title .new-line
+{
+    display: block;
+}
+
+.wrapper img {
+  border-radius: 50%;
+}
