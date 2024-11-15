@@ -2,44 +2,122 @@
 
 body {
   font-family: "Season";
+  box-sizing: border-box;
 }
-.main-wrapper {
+.porfolio-page {
+  display: flex;
+  justify-content: center;
   padding: 5rem;
 }
-
-.wrapper {
+.main-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+}
+.title-section {
+  display: flex;
+  gap: 8rem;
+}
+
+.title-section .title {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.title-section .title .new-line {
+  display: flex;
+  line-height: 0.56em;
+}
+
+.title-section .img-container {
+  width: 250px;
+  height: 350px;
+}
+.title-section img {
+  width: 100%;
+  height: 100%;
+  object-position: 70% 100%;
+  object-fit: cover;
+}
+
+.button-wrap {
+  position: absolute;
+  display: block;
+  top: 60%;
+  border: 1px solid;
+  max-width: 350px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+}
+
+.button-wrap a{
+  text-decoration: none;
 }
 
 .button {
   display: flex;
   justify-content: end;
-  font-size: 1.5rem;
-  margin-right: -1rem;
-}
-.button-wrap
-{   
-    margin-top: 20px;
-    border: 1px solid;
-    max-width: 320px;
-    padding: 10px;
-    border-radius: 30px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  font-size: 1.3rem;
 }
 
-.title {
-  font-size: 5rem;
-  font-weight: 500;
-  line-height: 5rem;
+.button a {
+  text-decoration: none;
 }
 
-.title .new-line
-{
-    display: block;
+@media (max-width: 1024px) {
+  .title-section .title {
+    font-size: 2.3rem;
+  }
+
+  .button-wrap {
+    font-size: 0.45rem;
+  }
+
+  .title-section .img-container {
+    width: 125px;
+    height: 175px;
+  }
+
+  .button {
+    font-size: 0.55rem;
+  }
 }
 
-.wrapper img {
-  border-radius: 50%;
+@media (max-width: 600px) {
+  .porfolio-page {
+    padding: 2rem; 
+  }
+
+  .title-section {
+    flex-direction: column; 
+    gap: 2rem; 
+    align-items: center; 
+  }
+
+  .title-section .title {
+    font-size: 2.5rem; 
+    text-align: center; 
+  }
+
+  .title-section .img-container {
+    width: 200px; 
+    height: 200px; 
+  }
+
+  .button-wrap {
+    position: relative;
+    max-width: 280px;
+    top: 5%; 
+    margin: 1rem auto;
+  }
+
+  .button {
+    justify-content: center; 
+    font-size: 1.1rem; 
+  }
 }

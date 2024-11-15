@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'My Porfolio',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/boy.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -72,10 +72,10 @@ const config: Config = {
 
     },
     navbar: {
-      title: 'My Site',
+      title: 'AKMH',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/boy.png',
       },
       items: [
         // {

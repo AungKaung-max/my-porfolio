@@ -14,17 +14,25 @@ const Title = () => {
 const Porfolio = () => {
   return (
     <>
+      <div className="porfolio-page">
       <div className="main-wrapper">
-        <div className="wrapper">
+        <div className="title-section">
           <Title></Title>
-          <img src={useBaseUrl("/img/docusaurus.png")}></img>
+          <div className="img-container">
+            <img src={useBaseUrl("/img/akmh.jpeg")}></img>
+          </div>
         </div>
         <div className="button-wrap">
+        <Link to="/about-me" className="link">
           Aung Kaung Myat Htun/Full Stack Developer
+          </Link>
         </div>
         <div className="button">
-          <Link to="/about-me">Work with me today </Link>
+          <Link to="/about-me" className="link">
+            ↳Work with me today
+          </Link>
         </div>
+      </div>
       </div>
     </>
   );
