@@ -85,7 +85,7 @@ const config: Config = {
         //   label: 'Tutorial',
         // },
         {
-          to: '/about-me', label:'About Me', position: 'left'
+          to: '/docs/about', label:'About Me', position: 'left'
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {

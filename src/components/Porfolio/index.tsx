@@ -23,7 +23,7 @@ const Porfolio = () => {
           </div>
         </div>
         <div className="button-wrap">
-        <Link to="/about-me" className="link">
+        <Link to="/docs/about" className="link">
           Aung Kaung Myat Htun/Full Stack Developer
           </Link>
         </div>
