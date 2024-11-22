@@ -28,7 +28,7 @@ const Porfolio = () => {
           </Link>
         </div>
         <div className="button">
-          <Link to="/about-me" className="link">
+          <Link to="/docs/about" className="link">
             ↳Work with me today
           </Link>
         </div>
