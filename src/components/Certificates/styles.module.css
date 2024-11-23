@@ -70,5 +70,13 @@
   .certificate-card:hover .hover-text {
     opacity: 1; /* Show text on hover */
   }
+
+ 
   
+ 
   
+  @media (max-width:768px) {
+    .certificate-card {
+      width: 20rem;
+    }
+  }
