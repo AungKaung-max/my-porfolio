@@ -1,10 +1,18 @@
-import React from 'react';
-import Layout from '@theme/Layout';
-import { useHistory } from 'react-router-dom'; // To handle navigation
-import styles from './styles.module.css';
+import React from "react";
+import Layout from "@theme/Layout";
+import { useHistory, useLocation } from "react-router-dom"; // To handle navigation
+import styles from "./styles.module.css";
+
+interface Props {
+  imageUrl: string;
+  imageAlt: string;
+}
 
 const FullImagePage = () => {
   const history = useHistory(); // Hook to navigate programmatically
+  const location = useLocation();
+  const imageUrl = new URLSearchParams(location.search).get("imageUrl") || "";
+  const imageAlt = new URLSearchParams(location.search).get("imageAlt") || "";
 
   // Function to close the modal and go back
   const closeModal = () => {
@@ -13,14 +21,14 @@ const FullImagePage = () => {
 
   return (
     <Layout>
-      <div className={styles['modal']}>
-        <button className={styles['close-button']} onClick={closeModal}>
+      <div className={styles["modal"]}>
+        <button className={styles["close-button"]} onClick={closeModal}>
           &times; {/* Close icon */}
         </button>
         <img
-          src="/img/akmh.jpeg"  // Path to the static image
-          alt="Full Screen Image"
-          className={styles['full-screen-image']}
+          src={imageUrl} // Path to the static image
+          alt={imageAlt}
+          className={styles["full-screen-image"]}
         />
       </div>
     </Layout>
