@@ -45,6 +45,7 @@
     color: #000;
     font-size: 1.5rem; /* Smaller close button on mobile */
     border: 1px solid;
+    top: 15%;
   }
 
   .modal {
@@ -56,8 +57,7 @@
 @media (max-width: 480px) {
   .close-button {
     font-size: 1.2rem;
-    top: 25%;
-    border-radius: none;
+    top: 32%;
     border: 1px solid; /* Further reduce size for very small screens */
   }
 
