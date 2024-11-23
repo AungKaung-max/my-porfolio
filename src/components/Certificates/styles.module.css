@@ -1,5 +1,6 @@
 /* Certificate card styling */
 .certificate-card {
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -15,12 +16,14 @@
   }
   
   .certificate-card h3 {
+    margin-top: 1rem;
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 8px;
   }
   
   .certificate-card p {
+    padding: 10px;
     font-size: 1rem;
     color: #666;
     margin-bottom: 16px;
