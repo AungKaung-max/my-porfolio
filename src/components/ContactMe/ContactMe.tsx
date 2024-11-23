@@ -18,7 +18,7 @@ const ContactMe: React.FC<ContactMeProps> = ({ iframeUrl }) => {
       <h3>Email:</h3>
       <p>
         You can email me at{" "}
-        <a href="mailto:aungkaungmyathtun@gmail.com">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aungkaungmyathtun@gmail.com&su=Your+Subject+Here&body=Your+Message+Here" target="_blank">
           aungkaungmyathtun@gmail.com
         </a>
       </p>
