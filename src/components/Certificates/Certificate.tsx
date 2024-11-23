@@ -17,16 +17,19 @@ const Certificate = ({ title, description, imageUrl, imageAlt }: Props) => {
 
       {/* Image with click event */}
       <div className={styles["image-wrapper"]}>
-        <img src={imageUrl} alt={imageAlt} />
-
-        <Link
-          to={`/full-image?imageUrl=${encodeURIComponent(
-            imageUrl
-          )}&imageAlt=${encodeURIComponent(imageAlt)}`}
-          className={styles["hover-text"]}
-        >
-          Click to view full image
-        </Link>
+      {imageUrl ? (
+          <>
+            <img src={imageUrl} alt={imageAlt} />
+            <Link
+              to={`/full-image?imageUrl=${encodeURIComponent(imageUrl)}&imageAlt=${encodeURIComponent(imageAlt)}`}
+              className={styles["hover-text"]}
+            >
+              Click to view full image
+            </Link>
+          </>
+        ) : (
+          <p className={styles["coming-soon"]}>Coming Soon</p> 
+        )}
       </div>
     </div>
   );

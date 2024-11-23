@@ -4,7 +4,7 @@
     padding: 16px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 20rem;
+    width: 24.5rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -34,8 +34,9 @@
     align-items: center;
     position: relative;
   }
+
   
-  .certificate-card img {
+  .certificate-card img{
     width: 100%; 
     object-fit: cover; 
     border-radius: 8px;
@@ -43,6 +44,8 @@
     cursor: pointer; /* Makes image clickable */
     transition: opacity 0.3s ease;
   }
+
+  
   
   .certificate-card .hover-text {
     position: absolute;
