@@ -1,0 +1,67 @@
+/* Full-screen image modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: auto; /* Make sure content doesn't overflow */
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Full-screen image styling */
+.full-screen-image {
+  max-width: 100%;
+  max-height: 100vh; /* Limit height to viewport height */
+  object-fit: contain; /* Maintain image aspect ratio */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .close-button {
+    color: #000;
+    font-size: 1.5rem; /* Smaller close button on mobile */
+   
+  }
+
+  .modal {
+    padding: 10px; /* Add some padding to prevent image from touching edges */
+  }
+}
+
+/* Extra small screens (Mobile) */
+@media (max-width: 480px) {
+  .close-button {
+    font-size: 1.2rem;
+    top: 25%;
+    border-radius: none;
+    border: 1px solid; /* Further reduce size for very small screens */
+  }
+
+  .full-screen-image {
+    max-height: 90vh; /* Make the image a bit smaller on small devices */
+  }
+}

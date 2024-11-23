@@ -1,0 +1,72 @@
+/* Certificate card styling */
+.certificate-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .certificate-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .certificate-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 16px;
+  }
+  
+  /* Flex container for image and hover text */
+  .certificate-card .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .certificate-card img {
+    width: 100%; /* Make the image fill the container */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 16px;
+    cursor: pointer; /* Makes image clickable */
+    transition: opacity 0.3s ease;
+  }
+  
+  .certificate-card .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .certificate-card:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+  }
+  
+  

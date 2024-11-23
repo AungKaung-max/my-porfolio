@@ -4,44 +4,24 @@ sidebar_position: 1
 
 # About Me
 
-Let's discover **Docusaurus in less than 5 minutes**.
+🚀 **Passionate Software Engineer Enthusiast**
 
-## Getting Started
+I am Aung Kaung Myat Htun, a dedicated software engineer with a strong drive for innovation and continuous learning. My passion is creating efficient solutions that connect technology with real user needs. I love turning ideas into reality with clean, easy-to-maintain code.
 
-Get started by **creating a new site**.
+🌱 **Curious Mindset:** Always eager to explore new technologies and improve my skills, I believe in the power of technology to transform lives and businesses.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+💡 **Creative Problem-Solver:** I enjoy solving tough problems and finding smart solutions that truly make an impact.
 
-### What you'll need
+🤝 **Collaborative Spirit:** Committed to teamwork and delivering impactful results.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Current Learning
 
-## Generate a new site
+### 🌩️ **AWS (Amazon Web Services)**
+I am currently diving into **AWS**, focusing on cloud computing, infrastructure management, and learning how to build scalable and secure applications using AWS services like EC2, S3, Lambda, and RDS.
 
-Generate a new Docusaurus site using the **classic template**.
+### ☕ **Java Spring Boot**
+In addition to my experience with JavaScript and Node.js, I’m expanding my backend skills by learning **Java Spring Boot**. I'm exploring how to build robust, high-performance applications with Spring Boot, and integrating it with databases like MySQL and MongoDB for full-stack development.
 
-The classic template will automatically be added to your project after you run the command:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Let's connect and create something extraordinary together!

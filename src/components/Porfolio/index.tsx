@@ -15,24 +15,24 @@ const Porfolio = () => {
   return (
     <>
       <div className="porfolio-page">
-      <div className="main-wrapper">
-        <div className="title-section">
-          <Title></Title>
-          <div className="img-container">
-            <img src={useBaseUrl("/img/akmh.jpeg")}></img>
+        <div className="main-wrapper">
+          <div className="title-section">
+            <Title></Title>
+            <div className="img-container">
+              <img src={useBaseUrl("/img/akmh.jpeg")}></img>
+            </div>
+          </div>
+          <div className="button-wrap">
+            <Link to="/docs/about" className="link">
+              Aung Kaung Myat Htun/Full Stack Developer
+            </Link>
+          </div>
+          <div className="button">
+            <Link to="/docs/about" className="link">
+              ↳Work with me today
+            </Link>
           </div>
         </div>
-        <div className="button-wrap">
-        <Link to="/docs/about" className="link">
-          Aung Kaung Myat Htun/Full Stack Developer
-          </Link>
-        </div>
-        <div className="button">
-          <Link to="/docs/about" className="link">
-            ↳Work with me today
-          </Link>
-        </div>
-      </div>
       </div>
     </>
   );
