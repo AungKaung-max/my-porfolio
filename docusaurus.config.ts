@@ -30,6 +30,15 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag', // Add this plugin
+      {
+        trackingID: 'G-8LZKXM5VQ3', // Your GA tracking ID
+        anonymizeIP: true, // Optional: Anonymizes IP addresses for privacy
+      },
+    ],
+  ],
 
   presets: [
     [
